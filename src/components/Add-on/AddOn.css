@@ -1,0 +1,61 @@
+.add-ons_form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.add-on_card {
+    padding: 1rem 2rem;
+    border-radius: .5rem;
+    border: 2px solid var(--light-gray);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.add-on_card input {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.add-on_label {
+    flex-grow: 1;
+    color: var(--cool-gray);
+    cursor: pointer;
+}
+
+.add-on_label h3 {
+    color: var(--marine-blue);
+    margin-block: .5rem;
+}
+
+.add-on_price {
+    color: var(--purplish-blue);
+    font-weight: 600;
+}
+
+.add-on_card:has(input[type='checkbox']:checked) {
+    border-color: var(--purplish-blue);
+    background-color: var(--magnolia);
+}
+
+@media screen and (max-width: 768px) {
+    .add-on_card {
+        padding-inline: 1rem;
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 555px) {
+    .add-on_card {
+        font-size: .95rem;
+    }
+
+    .add-on_card input {
+        width: 1.2rem;
+        height: 1.2rem;
+    }
+}

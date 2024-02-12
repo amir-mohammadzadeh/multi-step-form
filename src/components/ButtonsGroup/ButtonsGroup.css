@@ -1,0 +1,59 @@
+.button-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    background-color: var(--white);
+}
+
+.btn {
+    padding: .5rem 1rem;
+    border-radius: .35rem;
+    border: 0;
+    line-height: 1.5rem;
+    font-size: 1rem;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.btn-primum {
+    background-color: var(--marine-blue);
+    color: var(--magnolia);
+}
+
+.btn-primum:hover {
+    opacity: .85;
+}
+
+.btn-blue{
+    background-color: var(--purplish-blue);
+    color: var(--magnolia);
+}
+
+.text-btn {
+    padding: .25rem;
+    background-color: transparent;
+    font-weight: 600;
+    color: #9699ab;
+}
+
+.text-btn:hover {
+    color: var(--marine-blue);
+}
+
+.btn:disabled{
+    background-color: var(--cool-gray);
+}
+
+@media screen and (max-width: 555px) {
+    .button-content {
+        position: fixed;
+        padding-inline: 1.5rem;
+    }
+}

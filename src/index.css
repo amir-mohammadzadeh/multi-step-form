@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'Ubuntu' ;
+    src: url('assets/fonts/Ubuntu-Medium.ttf');
+}
+
+:root {
+    --white: #ffffff;
+    --marine-blue: #02295a;
+    --purplish-blue: #473dff;
+    --pastel-blue: #adbeff;
+    --light-blue: #bfe2fd;
+    --strawberry-red: #ed3548;
+    --cool-gray: #9699ab;
+    --cool-gray-1: #4a5a6c;
+    --light-gray: #d6d9e6;
+    --magnolia: #f0f6ff;
+    --alabaster: #fafbff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    font-family: 'Ubuntu' , sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 2em;
+}
+h4,
+h1{
+    margin: 0;
+}
+
+a:visited,a{
+    color: inherit;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+input:focus{
+    outline: none;
+}
+
+/* Hide Arrows From Input Number */
+/* Chrome, Safari, Edge, Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+[hidden]{
+    display: none;
+}

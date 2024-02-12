@@ -1,0 +1,18 @@
+.confirm_container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.confirm_container h1 {
+    margin-top: 1rem;
+}
+
+.confirm-dis {
+    color: var(--cool-gray);
+    text-align: center;
+}

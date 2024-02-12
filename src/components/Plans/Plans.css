@@ -1,0 +1,85 @@
+.plans_container {
+    margin-block: .5rem 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.plan-card {
+    width: 10rem;
+    height: auto;
+    padding: 1rem;
+    border: 2px solid var(--light-gray);
+    border-radius: .5rem;
+    transition: .3s;
+}
+
+.plan-card:hover {
+    cursor: pointer;
+    border-color: var(--purplish-blue);
+}
+
+.selected-plan {
+    background-color: var(--alabaster);
+    border-color: var(--purplish-blue);
+}
+
+.plan-icon {
+    display: block;
+    margin-bottom: 2.5rem;
+}
+
+.plan-dis {
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    color: var(--marine-blue);
+}
+
+.plan-dis h3 {
+    margin: 0;
+}
+
+.plan-price {
+    font-weight: 600;
+    color: var(--cool-gray);
+}
+
+.plan-free-month {
+    font-weight: 600;
+}
+
+.plan-period {
+    padding-block: 1rem;
+    border-radius: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .85rem;
+    background-color: var(--magnolia);
+    color: var(--cool-gray);
+    font-weight: 600;
+}
+
+.selected-period {
+    transition: .5s;
+    color: var(--marine-blue);
+}
+
+
+@media screen and (max-width: 768px) {
+    .plans_container {
+        flex-direction: column;
+    }
+
+    .plan-card {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+    }
+
+    .plan-icon {
+        margin: 0;
+    }
+
+}

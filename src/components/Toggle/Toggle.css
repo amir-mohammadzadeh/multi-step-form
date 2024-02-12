@@ -1,0 +1,32 @@
+#planPeriodSelect{
+    display: none;
+}
+
+.Toggle_Lable{
+    position: relative;
+    display: block;
+    width: 4.25rem;
+    height: 1.85rem;
+    border-radius: 2rem;
+    background-color: #02295a;
+    cursor: pointer;
+}
+
+.Toggle_Lable .circle{
+    display: block;
+    position: absolute;
+    top: .2rem;
+    left: .7rem;
+    width: 1.5rem ;
+    height: 1.5rem ;
+    background-color: #fafbff;
+    border-radius: 50% 50%  50%  0 ;
+    transform: translateX(0)  rotate(45deg);
+    transition: .2s ease-in-out;
+}
+
+#planPeriodSelect:checked + .Toggle_Lable .circle{
+    border-radius: 50% 0 50%  50% ;
+    transform: translateX(85%) rotate(45deg) ; 
+}
+
